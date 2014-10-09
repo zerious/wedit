@@ -1,0 +1,33 @@
+{
+  "name": "wedit",
+  "version": "0.0.0",
+  "description": "Web-Based Editor",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^2.11.1",
+    "exam": "^0.0.8",
+    "istanbul": "^0.3.0",
+    "zeriousify": "^0.1.10"
+  },
+  "keywords": [
+    "wedit"
+  ],
+  "main": "wedit.js",
+  "engines": {
+    "node": ">=0.2.6"
+  },
+  "scripts": {
+    "test": "./node_modules/exam/exam.js",
+    "cover": "istanbul cover ./node_modules/exam/exam.js",
+    "report": "open coverage/lcov-report/index.html",
+    "coveralls": "istanbul cover ./node_modules/exam/exam.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+  },
+  "repository": "https://github.com/lighterio/wedit.git",
+  "bugs": "https://github.com/lighterio/wedit/issues",
+  "homepage": "https://github.com/lighterio/wedit",
+  "author": "Sam Eubank <sameubank@gmail.com>",
+  "contributors": [
+    "Sam Eubank <sameubank@gmail.com>"
+  ],
+  "license": "MIT"
+}
